@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   :root {
     --neutralWhite: #FFFFFF;
-    --primaryGrey: #E5E5E5;
     --brandColorPrimary: #1B31A8;
     --brandColorSecondary: #0079FF;
     --blueGray900: #1E2A32;
@@ -33,7 +32,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: var(--primaryGrey);
+    background: var(--blueGray10);
   }
 
   body, input, button {
