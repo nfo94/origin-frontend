@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from 'components/Card';
+import SavingGoalCard from 'components/SavingGoalCard';
 
 import Container from './styles';
 
@@ -10,7 +10,7 @@ export default function SavingGoalPlan() {
       <h3>
         Let&apos;s plan your <strong>saving goal</strong>.
       </h3>
-      <Card />
+      <SavingGoalCard />
     </Container>
   );
 }
