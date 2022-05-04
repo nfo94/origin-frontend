@@ -8,6 +8,7 @@ import AmountInput from 'components/AmountInput';
 import MonthYearInput from 'components/MonthYearInput';
 import CardResult from 'components/CardResult';
 import Button from 'components/Button';
+import { ReactComponent as BuyAHouse } from 'assets/icons/buy-a-house.svg';
 
 import { Container, CardInputs } from './styles';
 
@@ -70,7 +71,7 @@ export default function Card() {
   return (
     <Container>
       <div className="item">
-        <CardHeader />
+        <CardHeader Icon={BuyAHouse} title="Buy a house" subtitle="Saving goal" />
       </div>
 
       <div className="item">

@@ -1,19 +1,27 @@
 import React from 'react';
 
-import { ReactComponent as BuyAHouse } from 'assets/icons/buy-a-house.svg';
+import PropTypes from 'prop-types';
 
 import Header from './styles';
 
-export default function CardHeader() {
+export default function CardHeader({ Icon, title, subtitle }) {
   return (
     <Header>
       <div>
-        <BuyAHouse />
+        <Icon />
       </div>
       <div>
-        <h2>Buy a house</h2>
-        <p>Saving goal</p>
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
       </div>
     </Header>
   );
 }
+
+CardHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  Icon: PropTypes.shape({
+    $$typeof: PropTypes.symbol,
+  }).isRequired,
+};
