@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 import { format, add, sub, compareAsc, eachMonthOfInterval } from 'date-fns';
 
-import { NEXT_DATE, NEXT_MONTH, NEXT_YEAR, OPERATIONS } from 'utils/constants';
-import CardHeader from 'components/CardHeader';
-import AmountInput from 'components/AmountInput';
-import MonthYearInput from 'components/MonthYearInput';
-import CardResult from 'components/CardResult';
-import Button from 'components/Button';
 import { ReactComponent as BuyAHouse } from 'assets/icons/buy-a-house.svg';
+import AmountInput from 'components/AmountInput';
+import Button from 'components/Button';
+import CardHeader from 'components/CardHeader';
+import CardResult from 'components/CardResult';
+import MonthYearInput from 'components/MonthYearInput';
+import { NEXT_DATE, NEXT_MONTH, NEXT_YEAR, OPERATIONS } from 'utils/constants';
 
 import { Container, CardInputs } from './styles';
 
