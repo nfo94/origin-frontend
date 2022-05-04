@@ -7,6 +7,7 @@ const Container = styled.main`
   align-items: center;
   flex-direction: column;
   margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 
   h3 {
     margin-bottom: 1.5rem;
