@@ -34,6 +34,19 @@
     "react"
   ],
   "rules": {
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "labelComponents": [
+          "label"
+        ],
+        "controlComponents": [
+          "IMaskInput",
+          "MonthYearInput"
+        ],
+        "depth": 3
+      }
+    ],
     "react/jsx-filename-extension": [
       1,
       {
