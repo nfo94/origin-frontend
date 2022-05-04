@@ -12,6 +12,10 @@ const Inputs = styled.label`
     color: var(--blueGray600);
     font-weight: 500;
     font-size: 1.5rem;
+
+    &:focus {
+      border: 1px solid var(--blueGray100);
+    }
   }
 `;
 

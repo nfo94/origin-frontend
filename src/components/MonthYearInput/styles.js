@@ -13,6 +13,10 @@ const Input = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  &:focus {
+    border: 1px solid var(--blueGray100);
+  }
+
   @media (min-width: 320px) and (max-width: 868px) {
     width: 100%;
   }
