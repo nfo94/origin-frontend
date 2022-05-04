@@ -12,7 +12,7 @@ import { NEXT_DATE, NEXT_MONTH, NEXT_YEAR, OPERATIONS } from 'utils/constants';
 
 import { Container, CardInputs } from './styles';
 
-export default function Card() {
+export default function SavingGoalCard() {
   const [amount, setAmount] = useState('');
   const [month, setMonth] = useState(NEXT_MONTH);
   const [year, setYear] = useState(NEXT_YEAR);
@@ -20,26 +20,22 @@ export default function Card() {
   const [monthlyAmount, setMonthlyAmount] = useState('');
   const [monthlyDeposits, setMonthlyDeposits] = useState('');
 
-  const handleResult = () => {
+  useEffect(() => {
     const interval = eachMonthOfInterval({
       start: Date.parse(NEXT_DATE),
       end: Date.parse(date),
     });
     const parsedMonths = parseFloat(interval.length);
-    const parsedAmount = amount === '' ? 0 : amount.replace(/,/g, '');
-
-    if (parsedAmount === 0 && parsedMonths === 0) {
+    const normalizedAmount = amount === '' ? 0 : amount.replace(/,/g, '');
+    if (normalizedAmount === 0 && parsedMonths === 0) {
       setMonthlyDeposits('');
       setMonthlyAmount('');
       return;
     }
+    const parsedAmount = parseFloat(normalizedAmount);
     const result = (parsedAmount / parsedMonths).toFixed(2);
     setMonthlyAmount(result);
     setMonthlyDeposits(parsedMonths.toString());
-  };
-
-  useEffect(() => {
-    handleResult();
   }, [month, year, amount]);
 
   const handleReachDate = operation => {
@@ -47,7 +43,6 @@ export default function Card() {
       const newDate = add(date, { months: 1 });
       const newMonth = format(newDate, 'LLLL');
       const newYear = format(newDate, 'yyyy');
-
       setDate(newDate);
       setMonth(newMonth);
       setYear(newYear);
@@ -60,7 +55,6 @@ export default function Card() {
       } else {
         const newMonth = format(newDate, 'LLLL');
         const newYear = format(newDate, 'yyyy');
-
         setDate(newDate);
         setMonth(newMonth);
         setYear(newYear);
