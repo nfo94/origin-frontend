@@ -10,11 +10,7 @@ export default function CardResult({ monthlyAmount, monthlyDeposits, amount, mon
       <div className="resultAmount">
         <p className="resultAmount--text">Monthly amount</p>
         <p className="resultAmount--number">
-          {Intl.NumberFormat('en-IN', {
-            style: 'currency',
-            currency: 'USD',
-            minimumFractionDigits: 2,
-          }).format(monthlyAmount)}
+          {monthlyAmount.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
         </p>
       </div>
       <div className="resultSummary">
