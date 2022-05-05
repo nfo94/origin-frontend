@@ -10,7 +10,7 @@ export default function CardResult({ monthlyAmount, monthlyDeposits, amount, mon
       <div className="resultAmount">
         <p className="resultAmount--text">Monthly amount</p>
         <p className="resultAmount--number">
-          {monthlyAmount.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+          ${monthlyAmount.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
         </p>
       </div>
       <div className="resultSummary">
