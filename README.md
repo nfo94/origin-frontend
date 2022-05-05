@@ -14,7 +14,7 @@ It uses the following technologies:
 
 Demo UI:
 
-[ui-demo](demo.gif)
+![ui-demo](demo.gif)
 
 Next steps:
 
