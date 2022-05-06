@@ -1,5 +1,7 @@
 ## Origin Frontend Take-Home Assignment
 
+<img src="ui.png" alt="ui" style="border-radius: 20px" width="85%"/>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 It uses the following technologies:
 
@@ -10,37 +12,41 @@ It uses the following technologies:
 - prop-types for props validation
 - ESLint for linting
 - Prettier for formatting
-- GitHub Actions for a simple CI/CD
-
-Demo UI:
-
-![ui-demo](demo.gif)
 
 Next steps:
 
-- [ ] Refactor to TypeScript (necessary to ease the js pain...)
+- [ ] Refactor to TypeScript
 - [ ] Improve currency and date manipulation
+- [ ] Improve test coverage
 
-### Available Scripts
+### How to run this project
 
-In the project directory, you can run:
+In the project directory, run:
 
-### `yarn start`
+#### `yarn`
+
+Installs all dependencies of the project.
+
+#### `yarn start`
 
 Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `yarn test`
+### Available scripts
 
-Launches the test runner in the interactive watch mode.
+There's a few useful scripts that you can run:
 
-### `yarn lint`
+#### `yarn test`
+
+Runs all tests.
+
+#### `yarn lint`
 
 Shows linting errors on the console.
 
-### `yarn lint:format`
+#### `yarn lint:format`
 
 Format errors with ESLint.
 
-### `yarn build`
+#### `yarn build`
 
 Builds the app for production to the `build` folder.
