@@ -28,7 +28,7 @@ export default function MonthYearInput({ month, year, handleReachDate }) {
           <img src={ArrowLeft} alt="arrow-left" />
         </div>
 
-        <div className="reachDate">
+        <div className="reachDate" data-testid="reachDate">
           <p>
             <strong>{month}</strong>
           </p>

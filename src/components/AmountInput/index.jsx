@@ -10,6 +10,7 @@ export default function AmountInput({ amount, handleTotalAmount }) {
     <AmountLabel label="amount">
       Total amount
       <IMaskInput
+        data-testid="amount"
         className="amount"
         mask={Number}
         tabIndex="0"
