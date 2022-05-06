@@ -19,8 +19,13 @@ export default function MonthYearInput({ month, year, handleReachDate }) {
     <label htmlFor="reachDate">
       Reach goal by
       <Input tabIndex="0" onKeyDown={handleKeyDown}>
-        <div role="button" className="icon">
-          <ArrowLeft onClick={() => handleReachDate(OPERATIONS.subtract)} />
+        <div
+          role="presentation"
+          className="icon"
+          onClick={() => handleReachDate(OPERATIONS.subtract)}
+          data-testid="leftIcon"
+        >
+          <img src={ArrowLeft} alt="arrow-left" />
         </div>
 
         <div className="reachDate">
@@ -30,8 +35,13 @@ export default function MonthYearInput({ month, year, handleReachDate }) {
           <p>{year}</p>
         </div>
 
-        <div role="button" className="icon">
-          <ArrowRight onClick={() => handleReachDate(OPERATIONS.add)} />
+        <div
+          role="presentation"
+          className="icon"
+          onClick={() => handleReachDate(OPERATIONS.add)}
+          data-testid="rightIcon"
+        >
+          <img src={ArrowRight} alt="arrow-right" />
         </div>
       </Input>
     </label>
