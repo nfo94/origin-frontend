@@ -1,6 +1,6 @@
 ## Origin Frontend Take-Home Assignment
 
-<img src="ui.png" alt="ui" style="border-radius: 20px" width="85%"/>
+<img src="ui.png" alt="ui" style="border-radius: 20px" />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 It uses the following technologies:
