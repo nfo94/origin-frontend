@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { format, add, sub, compareAsc, eachMonthOfInterval } from 'date-fns';
 
-import { ReactComponent as BuyAHouse } from 'assets/icons/buy-a-house.svg';
+import BuyAHouse from 'assets/icons/buy-a-house.svg';
 import AmountInput from 'components/AmountInput';
 import Button from 'components/Button';
 import CardHeader from 'components/CardHeader';

@@ -2,8 +2,8 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import { ReactComponent as ArrowLeft } from 'assets/icons/icon-left.svg';
-import { ReactComponent as ArrowRight } from 'assets/icons/icon-right.svg';
+import ArrowLeft from 'assets/icons/icon-left.svg';
+import ArrowRight from 'assets/icons/icon-right.svg';
 import { OPERATIONS } from 'utils/constants';
 
 import Input from './styles';

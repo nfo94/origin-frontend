@@ -8,7 +8,7 @@ export default function CardHeader({ Icon, title, subtitle }) {
   return (
     <Header>
       <div>
-        <Icon />
+        <img src={Icon} alt="buy-a-house" />
       </div>
       <div>
         <h2>{title}</h2>
@@ -21,7 +21,5 @@ export default function CardHeader({ Icon, title, subtitle }) {
 CardHeader.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  Icon: PropTypes.shape({
-    $$typeof: PropTypes.symbol,
-  }).isRequired,
+  Icon: PropTypes.string.isRequired,
 };
